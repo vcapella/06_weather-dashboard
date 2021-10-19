@@ -1,0 +1,37 @@
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-image: linear-gradient(
+    to right,
+    rgb(46, 142, 173),
+    rgb(37, 0, 139)
+  );
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.city-data {
+  padding: 10px 10px red;
+}
+
+input {
+  text-align: center;
+}
+
+.forecast {
+  font-size: 16px;
+  margin: auto;
+}
+span {
+  font-size: 1em;
+}
+li:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
