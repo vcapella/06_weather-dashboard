@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+
+    <main class="container">
+      <div class="row">
+
+        <section class="col-sm-2 bg-light">
+          <input class="col-12" type="text" placeholder="City Name" id="city-input">
+          <button class="d-grid gap-2 col-12 my-2  " id="city-btn">Search</button>
+
+          <ul class="list-group list-group-flush" id="city-list-ul">
+            
+          </ul>
+
+        </section>
+        <section class="col-sm-9">
+          <div class="row ml-2 border border-dark rounded">
+            <div class="col-sm-12" id="current-weather">
+                <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                <p>Temperature:<span class="current" id="temperature"></span></p>
+                <p>Humidity:<span class="current" id="humidity"></span></p> 
+                <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                <p>UV index:<span class="current rounded py-2 px-2 text-light" id="uv-index"></span></p> 
+            </div>
+        </div>
+        <div class="col-sm-9" id ="future-weather">
+          <h3><strong>5-Day Forecast:</strong></h3>
+          <div class="row text-light">
+              <div class="col-sm-2 bg-light forecast text-black ml-2 mb-3 p-2 mt-2 rounded" >
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Wind:<span id="fWind0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+              <div class="col-sm-2 bg-light forecast text-black ml-2 mb-3 p-2 mt-2 rounded" >
+                  <p id="fDate1"></p>
+                  <p id="fImg1"></p>
+                  <p>Temp:<span id="fTemp1"></span></p>
+                  <p>Wind:<span id="fWind1"></span></p>
+                  <p>Humidity:<span id="fHumidity1"></span></p>
+              </div>
+              <div class="col-sm-2 bg-light forecast text-black ml-2 mb-3 p-2 mt-2 rounded">
+                  <p id="fDate2"></p>
+                  <p id="fImg2"></p>
+                  <p>Temp:<span id="fTemp2"></span></p>
+                  <p>Wind:<span id="fWind2"></span></p>
+                  <p>Humidity:<span id="fHumidity2"></span></p>
+              </div>
+              <div class="col-sm-2 bg-light forecast text-black ml-2 mb-3 p-2 mt-2 rounded">
+                  <p id="fDate3"></p>
+                  <p id="fImg3"></p>
+                  <p>Temp:<span id="fTemp3"></span></p>
+                  <p>Wind:<span id="fWind3"></span></p>
+                  <p>Humidity:<span id="fHumidity3"></span></p>
+              </div>
+              <div class="col-sm-2 bg-light forecast text-black ml-2 mb-3 p-2 mt-2 rounded" >
+                  <p id="fDate4"></p>
+                  <p id="fImg4"></p>
+                  <p>Temp:<span id="fTemp4"></span></p>
+                  <p>Wind:<span id="fWind4"></span></p>
+                  <p>Humidity:<span id="fHumidity4"></span></p>
+              </div>
+          </div>
+      </div>
+        </section>
+
+      </div>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
