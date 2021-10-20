@@ -25,6 +25,7 @@ THEN I am again presented with current and future conditions for that city
 ```
 
 ## Mock-Up
+![temp_mockup](https://user-images.githubusercontent.com/90168071/138150932-4465d902-d7bb-4c7a-b062-b984f1d9e834.JPG)
 
 
 ## Live URL
